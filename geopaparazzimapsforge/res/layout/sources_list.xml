@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_background"
+    android:orientation="vertical">
+
+
+    <Button
+        android:id="@+id/toggleTypesButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:background="@drawable/button_background_drawable"
+        android:padding="@dimen/button_indent"
+        android:text="@string/select_map_types"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/main_text_color" />
+
+    <EditText
+        android:id="@+id/search_box"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toggleTypesButton"
+        android:hint="@string/type_to_filter"
+        android:inputType="text"
+        android:maxLines="1" />
+
+    <ExpandableListView
+        android:id="@+id/expandableSourceListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/search_box" />
+
+</RelativeLayout>

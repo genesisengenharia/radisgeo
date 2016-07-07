@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_frameLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+
+        android:background="@color/main_background"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/main_background"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+
+            <LinearLayout
+                android:id="@+id/coleta_item"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="vertical"
+                android:weightSum="1"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/config_formulario_item_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/action_bar_button_drawable"
+                    android:padding="@dimen/dashboard_button_padding"
+                    android:src="@drawable/config" >
+                </ImageButton>
+
+                <TextView
+                    android:id="@+id/config_formulario_item_text"
+                    style="@style/dashBoardText"
+                    android:text="Formulários"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:textAlignment="center">
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/config_coleta_item"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="vertical"
+                android:weightSum="1"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/config_coleta_item_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/action_bar_button_drawable"
+                    android:padding="@dimen/dashboard_button_padding"
+                    android:src="@drawable/config" />
+
+                <TextView
+                    style="@style/dashBoardText"
+                    android:id="@+id/config_coleta_item_text"
+                    android:text="Coleta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/main_background"
+            android:baselineAligned="false"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/config_mapas_item"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/config_mapas_item_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/action_bar_button_drawable"
+                    android:padding="@dimen/dashboard_button_padding"
+                    android:src="@drawable/config" />
+
+                <TextView
+                    style="@style/dashBoardText"
+                    android:id="@+id/config_mapas_item_text"
+                    android:text="Mapas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/config_apoio_item"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/config_apoio_item_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/action_bar_button_drawable"
+                    android:padding="@dimen/dashboard_button_padding"
+                    android:src="@drawable/config" />
+
+                <TextView
+                    style="@style/dashBoardText"
+                    android:id="@+id/config_apoio_item_text"
+                    android:text="Apoio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/main_background"
+            android:baselineAligned="false"
+            android:orientation="horizontal" >
+
+
+
+            <LinearLayout
+                android:id="@+id/config_projeto_item"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/config_projeto_item_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/action_bar_button_drawable"
+                    android:padding="@dimen/dashboard_button_padding"
+                    android:src="@drawable/config" >
+                </ImageButton>
+
+                <TextView
+                    android:id="@+id/config_projeto_item_text"
+                    style="@style/dashBoardText"
+                    android:text="Projeto" >
+                    <!--//android:text="@string/text_show_position_on_map" >-->
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/config_admin_item"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/config_admin_item_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/action_bar_button_drawable"
+                    android:padding="@dimen/dashboard_button_padding"
+                    android:src="@drawable/config" />
+
+                <TextView
+                    style="@style/dashBoardText"
+                    android:id="@+id/config_admin_item_text"
+                    android:text="Administrativo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>

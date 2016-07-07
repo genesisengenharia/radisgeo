@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_frameLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+
+        android:background="@color/main_background"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/main_background"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+
+
+            <LinearLayout
+                android:id="@+id/coleta_item"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/coleta_item_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/action_bar_button_drawable"
+                    android:padding="@dimen/dashboard_button_padding"
+                    android:src="@drawable/coleta" >
+                </ImageButton>
+
+                <TextView
+                    android:id="@+id/coleta_item_text"
+                    style="@style/dashBoardText"
+                    android:text="Coleta de Dados" >
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/apoio_item"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/apoio_item_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/action_bar_button_drawable"
+                    android:padding="@dimen/dashboard_button_padding"
+                    android:src="@drawable/apoio" />
+
+                <TextView
+                    style="@style/dashBoardText"
+                    android:id="@+id/apoio_item_text"
+                    android:text="Dados de Apoio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/main_background"
+            android:baselineAligned="false"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/enviar_item"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/enviar_item_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/action_bar_button_drawable"
+                    android:padding="@dimen/dashboard_button_padding"
+                    android:src="@drawable/sobe" />
+
+                <TextView
+                    style="@style/dashBoardText"
+                    android:id="@+id/enviar_item_text"
+                    android:text="Enviar Dados"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/receber_item"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/receber_item_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/action_bar_button_drawable"
+                    android:padding="@dimen/dashboard_button_padding"
+                    android:src="@drawable/desce" />
+
+                <TextView
+                    style="@style/dashBoardText"
+                    android:id="@+id/receber_item_text"
+                    android:text="Receber Dados"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/main_background"
+            android:baselineAligned="false"
+            android:orientation="horizontal" >
+
+
+
+            <LinearLayout
+                android:id="@+id/bussola_item"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/bussola_item_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/action_bar_button_drawable"
+                    android:padding="@dimen/dashboard_button_padding"
+                    android:src="@drawable/bussola" >
+                </ImageButton>
+
+                <TextView
+                    android:id="@+id/bussola_item_text"
+                    style="@style/dashBoardText"
+                    android:text="Bússola" >
+                    <!--//android:text="@string/text_show_position_on_map" >-->
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/config_item"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/config_item_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/action_bar_button_drawable"
+                    android:padding="@dimen/dashboard_button_padding"
+                    android:src="@drawable/config" />
+
+                <TextView
+                    style="@style/dashBoardText"
+                    android:id="@+id/config_item_text"
+                    android:text="Configurações"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>
