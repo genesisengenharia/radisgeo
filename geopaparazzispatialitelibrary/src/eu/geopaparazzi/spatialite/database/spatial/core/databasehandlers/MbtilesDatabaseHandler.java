@@ -285,7 +285,7 @@ public class MbtilesDatabaseHandler extends AbstractSpatialDatabaseHandler {
         // String tableName = metadata.name;
         this.defaultZoom = metadata.maxZoom;
         this.minZoom = metadata.minZoom;
-        this.maxZoom = metadata.maxZoom;
+        this.maxZoom = 22;
         this.boundsWest = d_bounds[0];
         this.boundsSouth = d_bounds[1];
         this.boundsEast = d_bounds[2];

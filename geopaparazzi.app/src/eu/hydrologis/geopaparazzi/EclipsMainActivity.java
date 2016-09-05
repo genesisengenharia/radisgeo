@@ -604,7 +604,7 @@ public class EclipsMainActivity extends Activity {
             }
 
             case R.id.receber_item_button: {
-                Intent i = new Intent("com.eclips.collect.android.activities.UpdateActivity");
+                Intent i = new Intent("com.eclips.collect.android.activities.UpdateMenuActivity");
                 startActivity(i);
                 break;
             }

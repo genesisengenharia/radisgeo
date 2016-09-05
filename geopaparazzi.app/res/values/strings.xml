@@ -3,7 +3,7 @@
 
     <string name="yes">yes</string>
     <string name="no">no</string>
-    <string name="app_name">e-clips GEO</string>
+    <string name="app_name">RADIS GEO</string>
     <string name="app_file_name">Geopaparazzi Project Database</string>
     <string name="notesvisibilityToggle">Toggle notes visibility.</string>
     <string name="kmlsaved">Data successfully exported to: </string>

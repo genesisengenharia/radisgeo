@@ -27,12 +27,9 @@ import android.widget.ImageButton;
 
 public class EclipsConfigFormActivity extends Activity {
 
-
     public void onCreate(Bundle savedInstance){
         super.onCreate(savedInstance);
         setContentView(R.layout.eclips_config_form);
-
-
 
         final int config_formulario_receberButtonId = R.id.config_formulario_receber_item_button;
         ImageButton config_formulario_receberButton = (ImageButton) findViewById(config_formulario_receberButtonId);
@@ -71,14 +68,14 @@ public class EclipsConfigFormActivity extends Activity {
                 }
 
                 case R.id.config_formulario_editar_item_button: {
-                    //Intent i = new Intent("com.eclips.collect.android.activities.InstanceChooserList");
-                    //startActivity(i);
+                    Intent i = new Intent("com.eclips.collect.android.activities.FormUpdateActivity");
+                    startActivity(i);
                     break;
                 }
 
                 case R.id.config_formulario_excluir_item_button: {
-                    //Intent i = new Intent("com.eclips.collect.android.preferences.MapSettings");
-                    //startActivity(i);
+                    Intent i = new Intent("com.eclips.collect.android.activities.FormDeleteActivity");
+                    startActivity(i);
                     break;
                 }
 

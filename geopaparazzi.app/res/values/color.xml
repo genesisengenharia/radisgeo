@@ -4,7 +4,7 @@
     <color name="main_background">#FFFFFF</color>
     <color name="main_decorations">#5d9d76</color>
     <color name="main_decorations_dark">#378756</color>
-    <color name="main_text_color">#5d9d76</color>
+    <color name="main_text_color">#000000</color>
     <color name="main_text_color_neutral">#000000</color>
     <color name="main_selection">#FF9933</color>
     <color name="main_selection_border">#993300</color>

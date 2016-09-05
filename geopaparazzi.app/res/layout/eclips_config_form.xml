@@ -109,13 +109,13 @@
                     android:layout_height="wrap_content"
                     android:background="@drawable/action_bar_button_drawable"
                     android:padding="@dimen/dashboard_button_padding"
-                    android:src="@drawable/config" >
+                    android:src="@drawable/config">
                 </ImageButton>
 
                 <TextView
                     android:id="@+id/config_formulario_excluir_item_text"
                     style="@style/dashBoardText"
-                    android:text="Excluir" >
+                    android:text="Excluir">
                     <!--//android:text="@string/text_show_position_on_map" >-->
                 </TextView>
             </LinearLayout>

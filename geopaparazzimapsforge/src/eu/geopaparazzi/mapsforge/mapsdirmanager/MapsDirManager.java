@@ -54,7 +54,6 @@ import eu.geopaparazzi.mapsforge.mapsdirmanager.maps.tiles.CustomTileTable;
 import eu.geopaparazzi.mapsforge.mapsdirmanager.maps.tiles.GeopackageTileDownloader;
 import eu.geopaparazzi.mapsforge.mapsdirmanager.maps.tiles.MapGeneratorInternal;
 import eu.geopaparazzi.mapsforge.mapsdirmanager.maps.tiles.MapTable;
-import eu.geopaparazzi.mapsforge.mapsdirmanager.utils.DefaultMapurls;
 import eu.geopaparazzi.spatialite.database.spatial.SpatialDatabasesManager;
 import eu.geopaparazzi.spatialite.database.spatial.core.tables.SpatialRasterTable;
 import eu.geopaparazzi.spatialite.database.spatial.core.enums.SpatialDataType;
@@ -167,17 +166,13 @@ public class MapsDirManager {
          * tile sources as default ones. They will automatically
          * be backed into a mbtiles db.
         */
-        mapnikFile = new File(mapsDir, DefaultMapurls.Mapurls.mapnik.toString() + DefaultMapurls.MAPURL_EXTENSION);
-        DefaultMapurls.checkAllSourcesExistence(context, mapsDir);
 
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(context);
         boolean doSpatialiteRecoveryMode = preferences.getBoolean(SpatialiteLibraryConstants.PREFS_KEY_SPATIALITE_RECOVERY_MODE,
-                false);
+                true);
         // doSpatialiteRecoveryMode=true;
-        if (doSpatialiteRecoveryMode) {
-            // Turn on Spatialite Recovery Modus
-            SPL_Vectors.VECTORLAYER_QUERYMODE = VectorLayerQueryModes.CORRECTIVEWITHINDEX;
-        }
+        SPL_Vectors.VECTORLAYER_QUERYMODE = VectorLayerQueryModes.CORRECTIVEWITHINDEX;
+
         selectedTileSourceType = preferences.getString(LibraryConstants.PREFS_KEY_TILESOURCE, ""); //$NON-NLS-1$
         selectedTableName = preferences.getString(LibraryConstants.PREFS_KEY_TILESOURCE_FILE, ""); //$NON-NLS-1$
         selectedTableTitle = preferences.getString(LibraryConstants.PREFS_KEY_TILESOURCE_TITLE, ""); //$NON-NLS-1$
@@ -217,7 +212,7 @@ public class MapsDirManager {
                     // Turn off Spatialite Recovery Modus after compleation
                     SPL_Vectors.VECTORLAYER_QUERYMODE = VectorLayerQueryModes.STRICT;
                     Editor editor = preferences.edit();
-                    editor.putBoolean(SpatialiteLibraryConstants.PREFS_KEY_SPATIALITE_RECOVERY_MODE, false);
+                    editor.putBoolean(SpatialiteLibraryConstants.PREFS_KEY_SPATIALITE_RECOVERY_MODE, true);
                     editor.commit();
                 }
             } catch (Exception e) {

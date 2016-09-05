@@ -2,7 +2,7 @@
 <resources>
   <string name="yes">sim</string>
   <string name="no">não</string>
-  <string name="app_name">e-clips GEO</string>
+  <string name="app_name">RADIS GEO</string>
   <string name="app_file_name">Banco de dados de Projetos do Geopaparazzi</string>
   <string name="notesvisibilityToggle">Alternar visibilidade de notas.</string>
   <string name="kmlsaved">Os dados foram exportados com sucesso para: </string>

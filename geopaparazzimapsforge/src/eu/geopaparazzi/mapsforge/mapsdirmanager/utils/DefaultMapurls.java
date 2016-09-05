@@ -39,27 +39,6 @@ public class DefaultMapurls {
     /**
      * The different available mapurls.
      */
-    public enum Mapurls {
-        /** */
-        mapnik(eu.geopaparazzi.mapsforge.R.raw.mapnik),
-        /** */
-        opencycle(eu.geopaparazzi.mapsforge.R.raw.opencycle),
-        /** */
-        mapquest(eu.geopaparazzi.mapsforge.R.raw.mapquest);
-
-        private int resourceId;
-
-        Mapurls( int resourceId ) {
-            this.resourceId = resourceId;
-        }
-
-        /**
-         * @return the resource id to retrieve the raw file.
-         */
-        public int getResourceId() {
-            return resourceId;
-        }
-    }
 
     /**
      * Checks if a source definition file exists. If not it is created.
@@ -70,15 +49,7 @@ public class DefaultMapurls {
      * @return the checked file.
      * @throws Exception if something goes wrong.
      */
-    public static File checkSourceExistence( Context context, File mapsDir, Mapurls type ) throws Exception {
-        File mapurlFile = new File(mapsDir, type.toString() + MAPURL_EXTENSION);
-        if (!mapurlFile.exists()) {
-            InputStream inputStream = context.getResources().openRawResource(type.getResourceId());
-            OutputStream outputStream = new FileOutputStream(mapurlFile);
-            FileUtilities.copyFile(inputStream, outputStream);
-        }
-        return mapurlFile;
-    }
+
 
     /**
      * Checks if the default mapurl source definition files exist. If not they are created.
@@ -87,14 +58,5 @@ public class DefaultMapurls {
      * @param mapsDir the maps folder file.
      * @throws Exception if something goes wrong.
      */
-    public static void checkAllSourcesExistence( Context context, File mapsDir ) throws Exception {
-        for( Mapurls mapurl : Mapurls.values() ) {
-            File mapurlFile = new File(mapsDir, mapurl.toString() + MAPURL_EXTENSION);
-            if (!mapurlFile.exists()) {
-                InputStream inputStream = context.getResources().openRawResource(mapurl.getResourceId());
-                OutputStream outputStream = new FileOutputStream(mapurlFile);
-                FileUtilities.copyFile(inputStream, outputStream);
-            }
-        }
-    }
+
 }

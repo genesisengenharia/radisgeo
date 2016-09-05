@@ -139,13 +139,21 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-       <activity android:name="com.eclips.collect.android.activities.GeoODKMapThemeActivity">
+        <activity android:name="com.eclips.collect.android.activities.GeoODKMapThemeActivity">
             <intent-filter>
                 <action android:name="com.eclips.collect.android.activities.GeoODKMapThemeActivity" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity android:name="com.eclips.collect.android.activities.InstanceChooserList">
+            <intent-filter>
+                <action android:name="com.eclips.collect.android.activities.InstanceChooserList" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
 
 		<activity
             android:name=".maps.GpsDataListActivity"
@@ -191,7 +199,7 @@
         <activity android:name="eu.hydrologis.geopaparazzi.maptools.FeaturePagerActivity" />
         <activity android:name="eu.geopaparazzi.spatialite.database.spatial.activities.EditableLayersListActivity" />
         <activity android:name="eu.hydrologis.geopaparazzi.maptools.CopyToLayersListActivity" />
-        <activity android:name=".maps.MapsActivity">
+        <activity android:name="eu.hydrologis.geopaparazzi.maps.MapsActivity">
             <intent-filter>
                 <action android:name="eu.hydrologis.geopaparazzi.maps.MAP_VIEW" />
 
