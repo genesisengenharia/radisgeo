@@ -1,4 +1,4 @@
-geopaparazzi
+radisGEO
 ============
 
-Please start here: http://geopaparazzi.github.io/geopaparazzi/
+http://projetoradisunb.com.br
